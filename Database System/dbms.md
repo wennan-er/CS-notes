@@ -12,16 +12,16 @@ server: Database Management System.
 (5)Disk Space Management: Translate page requests into physical bytes in 1 or more devices.  
 
 ![](./pic/dbms1.png)
-#### Disks
+## Disks
 NOTE: There is **no pointer dereference**. Instead using an API:  
 READ: transfer "page" of data from disk to RAM.   
 WRITE: transfer "page" of data from RAM to disk.  
 
-###### Components of a disk
+#### Components of a disk
 Only one head reads/writes at any one time.  
 Block/page size is a multiple of (fixed) sector size.  
 
-###### Accessing a Disk page
+#### Accessing a Disk page
 (1)seek time: movine arms to position disk head on track.  
 (2)rotational delay: waiting for block to rotate under head.  
 (3)transfer time: actually moving data to/from disk surface.  
