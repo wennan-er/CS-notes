@@ -18,7 +18,7 @@ server: Database Management System.
 **NOTE**: There is **no pointer dereference**. Instead using an API:  
 * READ: transfer "page" of data from disk to RAM.   
 * WRITE: transfer "page" of data from RAM to disk.  
-![](./pic/dbms2.png)
+![](./pic/dbms2.png){:height="50%" width="50%"}
 
 #### Components of a disk
 * Only one head reads/writes at any one time.  
