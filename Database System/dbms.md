@@ -8,7 +8,7 @@ server: Database Management System.
 (1)Query Parsing & Oprators: Parse, check and verify SQL legal. Translate into an efficient relational query plan.  
 (2)Relational Operators: There are individual algorithms put together to execute a dataflow.  
 (3)Files and Index Management: Organiza tables and Records as groups of pages in a logical file.  
-(4)BUffer Management: Map disk block to system memory(RAM).  
+(4)Buffer Management: Map disk block to system memory(RAM).  
 (5)Disk Space Management: Translate page requests into physical bytes in 1 or more devices.  
 
 ![](./pic/dbms1.png)
