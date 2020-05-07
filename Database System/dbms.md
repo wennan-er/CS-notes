@@ -72,3 +72,7 @@ server: Database Management System.
 <div align=center>
 <img src="./pic/dbms5.png" width="30%" height="30%"/>  
 </div>
+
+<div align=center>
+<img src="./pic/dbms6.png" width="40%" height="40%"/>  
+</div>
