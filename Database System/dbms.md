@@ -5,12 +5,14 @@ client: SQL.
 server: Database Management System.  
 
 #### Database Management System Modules
-(1)Query Parsing & Oprators: Parse, check and verify SQL legal. Translate into an efficient relational query plan.  
-(2)Relational Operators: There are individual algorithms put together to execute a dataflow.  
-(3)Files and Index Management: Organiza tables and Records as groups of pages in a logical file.  
-(4)Buffer Management: Map disk block to system memory(RAM).  
-(5)Disk Space Management: Map pages to locations on disk. (read/write a page, allocate/de-allocate logical pages)    
-
+* Query Parsing & Oprators: Parse, check and verify SQL legal. Translate into an efficient relational query plan.  
+* Relational Operators: There are individual algorithms put together to execute a dataflow.  
+* Files and Index Management: Organiza tables and Records as groups of pages in a logical file.  
+* Buffer Management: Map disk block to system memory(RAM).  
+* Disk Space Management: Map pages to locations on disk.   
+- [x] Provides API to read/write a page in device.  
+- [x] Provides 'next' locality and abstract FS/device details.  
+  
 ![](./pic/dbms1.png)
 ## Disks
 NOTE: There is **no pointer dereference**. Instead using an API:  
