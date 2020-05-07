@@ -76,3 +76,11 @@ server: Database Management System.
 <div align=center>
 <img src="./pic/dbms6.png" width="40%" height="40%"/>  
 </div>
+
+#### From Heap Files to Index Files
+* Heap Files: look up things by recordId(PageId + slotId).   
+* Index Files: look up things by value.  
+
+<div align=center>
+<img src="./pic/dbms7.png" width="40%" height="70%"/>  
+</div>
