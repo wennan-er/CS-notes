@@ -11,7 +11,7 @@ server: Database Management System.
 (4)BUffer Management: Map disk block to system memory(RAM).  
 (5)Disk Space Management: Translate page requests into physical bytes in 1 or more devices.  
 
-![](dbms1.png)
+![](/pic/dbms1.png)
 #### Disks
 NOTE: There is **no pointer dereference**. Instead using an API:  
 READ: transfer "page" of data from disk to RAM.   
