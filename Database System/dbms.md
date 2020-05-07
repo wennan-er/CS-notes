@@ -39,4 +39,10 @@ server: Database Management System.
   - [x] Insert/Delete/Modify record.  
   - [x] Fetch a particular record by **record id** (pageID, location on page).  
   - [x] Scan all records.  
+* Types of DB Files: Unordered Heap Files/Clustered Heap Files/Sorted Files/Index Files.  
   
+#### Heap File Organization
+* Page Directory + Data Page  
+<div align=center>
+<img src="./pic/dbms3.png" width="30%" height="30%"/>  
+</div>
