@@ -20,8 +20,7 @@ server: Database Management System.
 * WRITE: transfer "page" of data from RAM to disk.  
   
 <div align=center>
-<img src="./pic/dbms2.png" width="30%" height="30%" />  
-Disk Components
+<img src="./pic/dbms2.png" width="30%" height="30%" alt="Disk Components"/>  
 </div>
 
 #### Components of a disk
