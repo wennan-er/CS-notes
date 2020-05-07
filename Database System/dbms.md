@@ -10,8 +10,8 @@ server: Database Management System.
 * Files and Index Management: Organiza tables and Records as groups of pages in a logical file.  
 * Buffer Management: Map disk block to system memory(RAM).  
 * Disk Space Management: Map pages to locations on disk.   
-- [x] Provides API to read/write a page in device.  
-- [x] Provides 'next' locality and abstract FS/device details.  
+  - [x] Provides API to read/write a page in device.  
+  - [x] Provides 'next' locality and abstract FS/device details.  
   
 ![](./pic/dbms1.png)
 ## Disks
