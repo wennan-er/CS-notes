@@ -27,4 +27,3 @@ Block/page size is a multiple of (fixed) sector size.
 (3)transfer time: actually moving data to/from disk surface.  
 Note: key to I/O cost: reduce seek/rotational delays.  
 
-#### SSD (Solid State Disks)
