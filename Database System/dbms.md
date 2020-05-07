@@ -30,4 +30,9 @@ WRITE: transfer "page" of data from RAM to disk.
 Note: key to I/O cost: reduce seek/rotational delays.  
 
 ## Database Files
-* ** DB File **: A collection of pages, each containing a collection of records.  
+* **DB File**: A collection of pages, each containing a collection of records.  
+* API for DBMS:  
+  - [x] Insert/Delete/Modify record.  
+  - [x] Fetch a particular record by **record id** (pageID, location on page).  
+  - [x] Scan all records.  
+  
