@@ -29,3 +29,5 @@ WRITE: transfer "page" of data from RAM to disk.
 (3)transfer time: actually moving data to/from disk surface.  
 Note: key to I/O cost: reduce seek/rotational delays.  
 
+## Database Files
+* ** DB File **: A collection of pages, each containing a collection of records.  
