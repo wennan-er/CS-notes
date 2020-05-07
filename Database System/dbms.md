@@ -9,7 +9,7 @@ server: Database Management System.
 (2)Relational Operators: There are individual algorithms put together to execute a dataflow.  
 (3)Files and Index Management: Organiza tables and Records as groups of pages in a logical file.  
 (4)Buffer Management: Map disk block to system memory(RAM).  
-(5)Disk Space Management: Translate page requests into physical bytes in 1 or more devices.  
+(5)Disk Space Management: Map pages to locations on disk. (read/write a page, allocate/de-allocate logical pages)    
 
 ![](./pic/dbms1.png)
 ## Disks
@@ -18,8 +18,8 @@ READ: transfer "page" of data from disk to RAM.
 WRITE: transfer "page" of data from RAM to disk.  
 
 #### Components of a disk
-Only one head reads/writes at any one time.  
-Block/page size is a multiple of (fixed) sector size.  
+* Only one head reads/writes at any one time.  
+* Block = Unit of transfer for disk read/write. Block/page size is a multiple of (fixed) sector size.  
 
 #### Accessing a Disk page
 (1)seek time: movine arms to position disk head on track.  
