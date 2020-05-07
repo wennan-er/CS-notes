@@ -14,7 +14,7 @@ server: Database Management System.
   - [x] Provides 'next' locality and abstract FS/device details.  
   
 ![](./pic/dbms1.png)
-## Disks
+## Disk Space Management
 **NOTE**: There is **no pointer dereference**. Instead using an API:  
 * READ: transfer "page" of data from disk to RAM.   
 * WRITE: transfer "page" of data from RAM to disk.  
@@ -55,4 +55,20 @@ server: Database Management System.
 
 * Footer(like header for page)
   - [x] Pointer to free space
-  - [x] Record ID + Pointer to beginning of record
+  - [x] Record ID + Pointer to beginning of record  
+
+## Files and Index Management
+
+#### Multiple File Organizations
+* Heap Files: Suitable when typical access is a full scan of all records.  
+* Sorted Files: Best for retrieval in order, or when range of records is needed.  
+* Clustered Files & Indexes: Group data into blocks to enable fast look up and efficient modifications.  
+
+#### Cost Model 
+* B: The number od data blocks in the file.  
+* R: Number of records per block.  
+* D: Average time to read/write disk block.  
+
+<div align=center>
+<img src="./pic/dbms5.png" width="30%" height="30%"/>  
+</div>
