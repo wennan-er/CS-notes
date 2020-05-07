@@ -48,9 +48,11 @@ server: Database Management System.
 </div>
 
 #### Page Organization
+
 <div align=center>
 <img src="./pic/dbms4.png" width="30%" height="30%"/>  
 </div>
+
 * Footer(like header for page)
   - [x] Pointer to free space
   - [x] Record ID + Pointer to beginning of record
