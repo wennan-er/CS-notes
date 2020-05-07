@@ -65,13 +65,13 @@ server: Database Management System.
 * Clustered Files & Indexes: Group data into blocks to enable fast look up and efficient modifications.  
 
 #### Cost Model 
-* B: The number od data blocks in the file.  
-* R: Number of records per block.  
-* D: Average time to read/write disk block.  
-
 <div align=center>
 <img src="./pic/dbms5.png" width="30%" height="30%"/>  
 </div>
+
+* B: The number od data blocks in the file.  
+* R: Number of records per block.  
+* D: Average time to read/write disk block.  
 
 <div align=center>
 <img src="./pic/dbms6.png" width="40%" height="40%"/>  
