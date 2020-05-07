@@ -19,10 +19,10 @@ server: Database Management System.
 * READ: transfer "page" of data from disk to RAM.   
 * WRITE: transfer "page" of data from RAM to disk.  
   
-<center>
+<div align=center>
 <img src="./pic/dbms2.png" width="30%" height="30%" />  
 Disk Components
-</center>
+</div>
 
 #### Components of a disk
 * Only one head reads/writes at any one time.  
