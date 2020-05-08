@@ -144,5 +144,8 @@ server: Database Management System.
 * Clock:
   - [x] clock hand - point to next page to consider.   
   - [x] Ref bit: represent recently referenced pages.  
-  * hhh.    
+  * iterate through frames within the table, skipping pinned pages and wrapping around to frame 0 upon reaching the end, until the first unpinned frame with ref bit = 0 is found.  
+  * during each iteration, if the current frame’s ref bit = 1, decrement the ref bit to 0 and move the clock hand to the next frame.  
+  * upon reaching a frame with ref bit = 0, evict the existing page, read in the new page, set the frame’s ref bit to 1, and move the clock hand to the next frame.  
+     
 * Most-recently-used(MRU)
