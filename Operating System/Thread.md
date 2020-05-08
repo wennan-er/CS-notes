@@ -17,7 +17,7 @@
 #### Thread State  
 
 <div align=center>
-<img src="./pic/Thread/thread1.png" width="30%" height="60%"/>  
+<img src="./pic/Thread/thread1.png" width="15%" height="30%"/>  
 </div>
 
 * State shared by all threads in addr space  
