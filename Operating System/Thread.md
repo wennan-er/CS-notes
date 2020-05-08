@@ -14,7 +14,12 @@
 | Don’t worry about race conditions     |  Switching between threads is cheaper than process  |
 | One thread blocks in a task (say IO) then all threads block |   |
 
-#### Thread State
+#### Thread State  
+
+<div align=center>
+<img src="./pic/Thread/thread1.png" width="30%" height="60%"/>  
+</div>
+
 * State shared by all threads in addr space  
   * Content of memory(global variables, heap).  
   * I/O state: file descriptors, network connnections, etc.  
