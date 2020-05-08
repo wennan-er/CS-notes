@@ -137,4 +137,12 @@ server: Database Management System.
 * Page in pool may be requested many times:
   - [x] To pin a page: pin_count++.    
   - [x] A page is a candidate for replacement if pin_count == 0.  
-  
+
+##### Page Replacement Policy
+* Least-recently-used(LRU)    
+  - [x] LRU: add Last used column. Find min Last used(priority heap).    
+* Clock:
+  - [x] clock hand - point to next page to consider.   
+  - [x] Ref bit: represent recently referenced pages.  
+  * hhh.    
+* Most-recently-used(MRU)
