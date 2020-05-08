@@ -102,4 +102,4 @@ server: Database Management System.
 | Insert            | 2*D         | ((lg2B)+B)*D      |                 |
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
 
-* Height of Clustered Index: $log_{F}(BR/E)$.  
+* Height of Clustered Index: \\log_{F}(BR/E\\).  
