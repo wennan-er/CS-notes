@@ -113,5 +113,5 @@ server: Database Management System.
 </div>
 
 <div align=center>
-<img src="./pic/dbms/dbms910.png" width="40%" height="30%"/>  
+<img src="./pic/dbms/dbms10.png" width="40%" height="30%"/>  
 </div>
