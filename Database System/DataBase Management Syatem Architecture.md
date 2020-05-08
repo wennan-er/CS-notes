@@ -94,7 +94,7 @@ server: Database Management System.
 |                   | Heap File   | Sorted File       | Clustered Index |
 | ----------------- | :---------- | ---------------:  | :------------:  |
 | Scan all records  | B*D         | B*D               |                 |
-| Equality Search   | 0.5*B*D     | (lg2B)*D          |                 |
+| Equality Search   | $\frac{1}{2}B*D$     | (lg2B)*D          |                 |
 | Rnage Search      | B*D         | ((lg2B)+pages)*D  |                 |
 | Insert            | 2*D         | ((lg2B)+B)*D      |                 |
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
