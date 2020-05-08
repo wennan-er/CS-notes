@@ -101,3 +101,5 @@ server: Database Management System.
 | Rnage Search      | B*D         | ((lg2B)+pages)*D  |                 |
 | Insert            | 2*D         | ((lg2B)+B)*D      |                 |
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
+
+* Height of Clustered Index: $log_{F}(BR/E)$.  
