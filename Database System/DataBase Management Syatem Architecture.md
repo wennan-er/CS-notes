@@ -139,7 +139,7 @@ server: Database Management System.
   - [x] A page is a candidate for replacement if pin_count == 0.  
 
 ##### Page Replacement Policy
-* Least-recently-used(LRU)    
+* Least-recently-used(LRU) - good for random access      
   - [x] LRU: add Last used column. Find min Last used(priority heap).  
 
 <div align=center>
@@ -149,9 +149,9 @@ server: Database Management System.
 * Clock:  
   - [x] clock hand - point to next page to consider.     
   - [x] Ref bit: represent recently referenced pages.  
-      
+
   * Iterate through frames within the table, skipping pinned pages and wrapping around to frame 0 upon reaching the end, until the first unpinned frame with ref bit = 0 is found.    
   * During each iteration, if the current frame’s ref bit = 1, decrement the ref bit to 0 and move the clock hand to the next frame.    
   * Upon reaching a frame with ref bit = 0, evict the existing page, read in the new page, set the frame’s ref bit to 1, and move the clock hand to the next frame.    
 
-* Most-recently-used(MRU)
+* Most-recently-used(MRU) - good for repeated sequential  
