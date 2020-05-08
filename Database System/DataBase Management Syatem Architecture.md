@@ -1,4 +1,4 @@
-# Disk Representation 
+# DataBase Management Syatem Overview
 
 ## DBMS Architecture
 client: SQL.  
