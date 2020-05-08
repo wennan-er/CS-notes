@@ -91,10 +91,13 @@ server: Database Management System.
 <img src="./pic/dbms8.png" width="60%" height="30%"/>  
 </div>
 
+* F: Average internal node fanout.  
+* E: Average #data entries per half.  
+
 |                   | Heap File   | Sorted File       | Clustered Index |
 | ----------------- | :---------- | ---------------:  | :------------:  |
 | Scan all records  | B*D         | B*D               |                 |
-| Equality Search   | $\frac{1}{2}B*D$     | (lg2B)*D          |                 |
+| Equality Search   | 1/2*B*D     |(lg2B)*D           |                 |
 | Rnage Search      | B*D         | ((lg2B)+pages)*D  |                 |
 | Insert            | 2*D         | ((lg2B)+B)*D      |                 |
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
