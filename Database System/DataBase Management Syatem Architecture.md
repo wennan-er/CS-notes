@@ -112,6 +112,12 @@ server: Database Management System.
 <img src="./pic/dbms/dbms9.png" width="40%" height="30%"/>  
 </div>
 
+* Buffer Manager metadata:  
+  - [x] **Frame ID** that is uniquely associated with a memory address.  
+  - [x] **Page ID** for determining which page a frame currently contains.  
+  - [x] **Dirty Bit** for verifying whether or not a page has been modified.  
+  - [x] **Pin Count** for tracking the number of requestors currently using a page.  
+
 <div align=center>
 <img src="./pic/dbms/dbms10.png" width="60%" height="40%"/>  
 </div>
