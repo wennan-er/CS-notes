@@ -98,8 +98,9 @@ server: Database Management System.
 | ----------------- | :---------- | ---------------:  | :----------------:  |
 | Scan all records  | B*D         | B*D               | 3/2B*D              |
 | Equality Search   | 1/2*B*D     |(lg2B)*D           | (lgF(BR/E)+2)*D     |
-| Rnage Search      | B*D         | ((lg2B)+pages)*D  |                 |
-| Insert            | 2*D         | ((lg2B)+B)*D      |                 |
-| Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
+| Rnage Search      | B*D         | ((lg2B)+pages)*D  | (lgF(BR/E)+3*pages)*D  |
+| Insert            | 2*D         | ((lg2B)+B)*D      | (lgF(BR/E)+3)*D     |
+| Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      | (lgF(BR/E)+3)*D     |
 
 * Height of Clustered Index: lgF(BR/E). BR: #of records. E: records per leaf. BR/E: #of leafs.   
+* Range Search: 2/3 pages full
