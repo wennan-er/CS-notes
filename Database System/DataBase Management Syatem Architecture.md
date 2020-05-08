@@ -94,12 +94,12 @@ server: Database Management System.
 * F: Average internal node fanout.  
 * E: Average #data entries per half.  
 
-|                   | Heap File   | Sorted File       | Clustered Index |
-| ----------------- | :---------- | ---------------:  | :------------:  |
-| Scan all records  | B*D         | B*D               |                 |
-| Equality Search   | 1/2*B*D     |(lg2B)*D           |                 |
+|                   | Heap File   | Sorted File       | Clustered Index     |
+| ----------------- | :---------- | ---------------:  | :----------------:  |
+| Scan all records  | B*D         | B*D               | 3/2B*D              |
+| Equality Search   | 1/2*B*D     |(lg2B)*D           | (lgF(BR/E)+2)*D     |
 | Rnage Search      | B*D         | ((lg2B)+pages)*D  |                 |
 | Insert            | 2*D         | ((lg2B)+B)*D      |                 |
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      |                 |
 
-* Height of Clustered Index: \\log_{F}(BR/E\\).  
+* Height of Clustered Index: lgF(BR/E). BR: #of records. E: records per leaf. BR/E: #of leafs.   
