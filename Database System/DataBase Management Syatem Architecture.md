@@ -84,3 +84,10 @@ server: Database Management System.
 <div align=center>
 <img src="./pic/dbms7.png" width="40%" height="70%"/>  
 </div>
+
+#### Clustered VS Unclustered Index Heap Files
+
+<div align=center>
+<img src="./pic/dbms8.png" width="60%" height="30%"/>  
+</div>
+
