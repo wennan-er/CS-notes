@@ -105,7 +105,13 @@ server: Database Management System.
 * Range Search: 2/3 pages full.
 
 ## Buffer Management
+* Memory is converted into a buffer pool by partitioning the space into frames that pages can be placed in.  
+* The buffer pool is responsible for moving physical pages back and forth from main memory to disk.  
 
 <div align=center>
 <img src="./pic/dbms/dbms9.png" width="40%" height="30%"/>  
+</div>
+
+<div align=center>
+<img src="./pic/dbms/dbms910.png" width="40%" height="30%"/>  
 </div>
