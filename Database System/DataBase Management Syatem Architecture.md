@@ -13,7 +13,6 @@ server: Database Management System.
   - [x] Provides API to read/write a page in device.  
   - [x] Provides 'next' locality and abstract FS/device details.  
   
-![](./pic/dbms1.png)
 ## Disk Space Management
 **NOTE**: There is **no pointer dereference**. Instead using an API:  
 * READ: transfer "page" of data from disk to RAM.   
@@ -33,7 +32,7 @@ server: Database Management System.
 * transfer time: actually moving data to/from disk surface.  
 **Note**: key to I/O cost: reduce seek/rotational delays.  
 
-## Database Files
+### Database Files
 * **DB File**: A collection of pages, each containing a collection of records.  
 * API for DBMS:  
   - [x] Insert/Delete/Modify record.  
