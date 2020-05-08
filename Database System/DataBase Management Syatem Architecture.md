@@ -121,3 +121,20 @@ server: Database Management System.
 <div align=center>
 <img src="./pic/dbms/dbms10.png" width="60%" height="40%"/>  
 </div>
+
+##### When a page is requested
+* If reauested page is not in pool:
+  - [x] Choose an **un-pinned** frame for replacement.  
+  - [x] If frame "dirty", write current page to disk, makr "clean".  
+  - [x] Read requested page into frame.  
+
+* Pin the page and return its address.  
+
+##### After Requestor Finishes
+* Requestor of page must:  
+  - [x] Set dirty if page was modified.  
+  - [x] Unpin the page.  
+* Page in pool may be requested many times:
+  - [x] To pin a page: pin_count++.    
+  - [x] A page is a candidate for replacement if pin_count == 0.  
+  
