@@ -141,10 +141,12 @@ server: Database Management System.
 ##### Page Replacement Policy
 * Least-recently-used(LRU)    
   - [x] LRU: add Last used column. Find min Last used(priority heap).  
+
 <div align=center>
 <img src="./pic/dbms/dbms11.png" width="50%" height="30%"/>  
-</div>    
-* Clock:
+</div>
+
+* Clock:  
   - [x] clock hand - point to next page to consider.     
   - [x] Ref bit: represent recently referenced pages.    
   * iterate through frames within the table, skipping pinned pages and wrapping around to frame 0 upon reaching the end, until the first unpinned frame with ref bit = 0 is found.    
