@@ -20,7 +20,7 @@ server: Database Management System.
 * WRITE: transfer "page" of data from RAM to disk.  
   
 <div align=center>
-<img src="./pic/dbms2.png" width="30%" height="30%" alt="Disk Components"/>  
+<img src="./pic/dbms/dbms2.png" width="30%" height="30%" alt="Disk Components"/>  
 </div>
 
 #### Components of a disk
@@ -44,13 +44,13 @@ server: Database Management System.
 #### Heap File Organization
 * Page Directory + Data Page  
 <div align=center>
-<img src="./pic/dbms3.png" width="30%" height="30%"/>  
+<img src="./pic/dbms/dbms3.png" width="30%" height="30%"/>  
 </div>
 
 #### Page Organization
 
 <div align=center>
-<img src="./pic/dbms4.png" width="30%" height="30%"/>  
+<img src="./pic/dbms/dbms4.png" width="30%" height="30%"/>  
 </div>
 
 * Footer(like header for page)
@@ -66,7 +66,7 @@ server: Database Management System.
 
 #### Cost Model 
 <div align=center>
-<img src="./pic/dbms5.png" width="30%" height="30%"/>  
+<img src="./pic/dbms/dbms5.png" width="30%" height="30%"/>  
 </div>
 
 * B: The number od data blocks in the file.  
@@ -74,7 +74,7 @@ server: Database Management System.
 * D: Average time to read/write disk block.  
 
 <div align=center>
-<img src="./pic/dbms6.png" width="40%" height="40%"/>  
+<img src="./pic/dbms/dbms6.png" width="40%" height="40%"/>  
 </div>
 
 #### From Heap Files to Index Files
@@ -82,13 +82,13 @@ server: Database Management System.
 * Index Files: look up things by value.  
 
 <div align=center>
-<img src="./pic/dbms7.png" width="40%" height="70%"/>  
+<img src="./pic/dbms/dbms7.png" width="40%" height="70%"/>  
 </div>
 
 #### Clustered VS Unclustered Index Heap Files
 
 <div align=center>
-<img src="./pic/dbms8.png" width="60%" height="30%"/>  
+<img src="./pic/dbms/dbms8.png" width="60%" height="30%"/>  
 </div>
 
 * F: Average internal node fanout.  
@@ -103,4 +103,10 @@ server: Database Management System.
 | Delete            | (0.5*B+1)*D | ((lg2B)+B)*D      | (lgF(BR/E)+3)*D     |
 
 * Height of Clustered Index: lgF(BR/E). BR: #of records. E: records per leaf. BR/E: #of leafs.   
-* Range Search: 2/3 pages full
+* Range Search: 2/3 pages full.
+
+## Buffer Management
+
+<div align=center>
+<img src="./pic/dbms/dbms9.png" width="40%" height="30%"/>  
+</div>
