@@ -35,5 +35,9 @@
 ## Pthread Functions
 
 ```c
-int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_routine) (void *), void *arg);
+int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_routine) (void *), void *arg);  
 ```
+* The first is a pointer to a variable that will hold the id of the newly created thread.  
+* The second is a pointer to attributes that we can use to tweak and tune some of the advanced features of pthreads.   
+* The third is a pointer to a function that we want to run.  
+* Fourth is a pointer that will be given to our function.  
