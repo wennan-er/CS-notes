@@ -41,3 +41,15 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_r
 * The second is a pointer to attributes that we can use to tweak and tune some of the advanced features of pthreads.   
 * The third is a pointer to a function that we want to run.  
 * Fourth is a pointer that will be given to our function.  
+
+```c
+int pthread_join(pthread_t thread, void **retval);  
+```
+* The pthread_join() function waits for the thread to finish, clean up thread resources.     
+* On success, pthread_join() returns 0. On error, it returns an error number.  
+* If retval is not NULL, then the exit status of the target thread is placed in the location pointed to by retval.  
+
+```c
+void pthread_exit(void *retval);
+```
+* Stops the calling thread so the thread never returns after calling pthread_exit.  
