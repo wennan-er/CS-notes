@@ -44,6 +44,11 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr,void *(*start_r
   * Fourth - pointer given to our function.  
 
 ```c
+int pthread_yield(void);
+```
+* Goal: Relinquish processor voluntarily. The thread is placed at the end of the run queue, and another thread is scheduled to run.    
+
+```c
 int pthread_join(pthread_t thread, void **retval);  
 ```
 * Goal: Parent waits for the child thread to finish, clean up thread resources.      
