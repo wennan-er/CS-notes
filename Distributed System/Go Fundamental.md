@@ -9,8 +9,9 @@ type person struct {
     age  int
 }
 ```
-* Create a person struct: person{name: "Alice", age: 30}.  
-* Using a function to create a person struct: newPerson("Jon").    
+* Create a person struct: ```go person{name: "Alice", age: 30} ```.  
+* Using a function to create a person struct: newPerson("Jon").  
+
 ```go
 func newPerson(name string) *person {
     p := person{name: name}
