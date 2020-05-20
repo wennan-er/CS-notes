@@ -72,7 +72,7 @@ func (r rect) area() float64 {
 func (r rect) perim() float64 {
     return 2*r.width + 2*r.height
 }
-//The implementation for circles.
+
 func (c circle) area() float64 {
     return math.Pi * c.radius * c.radius
 }
@@ -81,7 +81,8 @@ func (c circle) perim() float64 {
 }
 ``` 
 
-* If a variable has an interface type, then we can call methods that are in the named interface. Here’s a generic measure function taking advantage of this to work on any geometry.  
+* If a variable has an interface type, then we can call methods that are in the named interface.  
+* The circle and rect struct types both implement the geometry interface so we can use instances of these structs as arguments to measure.    
 ```go
 func measure(g geometry) {
     fmt.Println(g)
@@ -91,7 +92,6 @@ func measure(g geometry) {
 func main() {
     r := rect{width: 3, height: 4}
     c := circle{radius: 5}
-// The circle and rect struct types both implement the geometry interface so we can use instances of these structs as arguments to measure.
     measure(r)
     measure(c)
 }
