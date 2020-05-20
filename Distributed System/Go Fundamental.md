@@ -96,3 +96,41 @@ func main() {
     measure(c)
 }
 ```
+
+## Concurrency  
+
+### Goroutines
+* A goroutine is a lightweight thread of execution.  
+* To invoke this function in a goroutine, use ```go go f(s)```.  
+
+### Channels  
+* Channels are the pipes that connect concurrent goroutines.  
+* You can send values into channels from one goroutine and receive those values into another goroutine.  
+* Send a value into a channel using the channel <- syntax.  
+
+#### Blocking Channel  
+```go
+func main() {
+    messages := make(chan string)
+    go func() { messages <- "ping" }()
+    msg := <-messages
+    fmt.Println(msg)
+}
+```
+* By default sends and receives block until both the sender and receiver are ready.  
+  * Here one thread is ```go msg := <-messages ``` waiting for receiving from channel.  
+  * One thread we create ```go go func() { messages <- "ping" }() ``` is sending to channel.  
+
+#### Channel Buffering  
+```go
+func main() {
+    messages := make(chan string, 2)
+
+    messages <- "buffered"
+    messages <- "channel"
+//Later we can receive these two values as usual.
+    fmt.Println(<-messages)
+    fmt.Println(<-messages)
+}
+```
+* Because this channel is buffered, we can send these values into the channel without a corresponding concurrent receive.  
