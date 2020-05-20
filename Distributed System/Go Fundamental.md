@@ -1,5 +1,12 @@
 # Go Fundamental  
 
+## Basics
+
+* To create an empty map: ```go make(map[key-type]val-type)```.  
+* Range on map iterates over key/value pairs.: ```go for i, num := range nums{} ```.  
+* Range can also iterate over just the keys of a map: ```go for k := range kvs {} ```.  
+
+
 ## Methods And Interfaces  
 
 ### Struct  
