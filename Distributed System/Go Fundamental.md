@@ -10,7 +10,7 @@ type person struct {
 }
 ```
 * Create a person struct: ```go person{name: "Alice", age: 30} ```.  
-* Using a function to create a person struct: newPerson("Jon").  
+* Using a function to create a person struct: ```go newPerson("Jon") ```.  
 
 ```go
 func newPerson(name string) *person {
