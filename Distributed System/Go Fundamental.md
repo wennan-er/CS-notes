@@ -26,9 +26,10 @@ func newPerson(name string) *person {
 type rect struct {
     width, height int
 }
-```
-* area method has a receiver type of *rect.  
+```  
 * Methods can be defined for either pointer or value receiver types.  
+  * Everytime call area(), only poniter is copied, otherwise r struct is copied, will be expansive.  
+  * Method can modify the value that its receiver points to.  
 
 ```go
 func (r *rect) area() int {
