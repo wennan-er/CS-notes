@@ -101,7 +101,7 @@ func main() {
 
 ### Goroutines
 * A goroutine is a lightweight thread of execution.  
-* To invoke this function in a goroutine, use ```go go f(s)```.  
+* To invoke this function in a goroutine, use ```go f(s)```.  
 
 ### Channels  
 * Channels are the pipes that connect concurrent goroutines.  
