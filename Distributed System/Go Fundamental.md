@@ -128,9 +128,30 @@ func main() {
 
     messages <- "buffered"
     messages <- "channel"
-//Later we can receive these two values as usual.
+
     fmt.Println(<-messages)
     fmt.Println(<-messages)
 }
 ```
-* Because this channel is buffered, we can send these values into the channel without a corresponding concurrent receive.  
+* Because this channel is buffered by 2 values, when it is full, we can send these values into the channel without a corresponding concurrent receive.  
+
+#### Channel Directions
+```go
+func ping(pings chan<- string, msg string) {
+    pings <- msg
+}
+// The pong function accepts one channel for receives (pings) and a second for sends (pongs).
+func pong(pings <-chan string, pongs chan<- string) {
+    msg := <-pings
+    pongs <- msg
+}
+func main() {
+    pings := make(chan string, 1)
+    pongs := make(chan string, 1)
+    ping(pings, "passed message")
+    pong(pings, pongs)
+    fmt.Println(<-pongs)
+}
+```
+* ```go pings <-chan string ```: channel for sending.    
+* ```pongs chan<- string ```: channel for receiving.  
