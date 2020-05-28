@@ -8,3 +8,10 @@
 * ```html <br> ```: Line break element. self-closing tag.    
 * ```html <hr size="3" noshade> ```: Horizontal lines. self-closing tag + attributes.  
 * ```html <center>Content</center> ```
+
+## Document Object
+* selector properties/methods:  
+  * document.body  
+  * document.getElementById()  
+  * document.getElementByClassName()  
+  * document.getElementByTagName()  
