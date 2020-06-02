@@ -9,7 +9,8 @@
 * ```html <hr size="3" noshade> ```: Horizontal lines. self-closing tag + attributes.  
 * ```html <center>Content</center> ```
 
-## Document Object
+## Document Object  
+The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.  
 * selector properties/methods:  
   * document.body  
   * document.getElementById()  
