@@ -8,4 +8,4 @@ Given an array which consists of non-negative integers and an integer m, you can
 Input:nums = [7,2,5,10,8],m = 2  
 Output:18
 ```
-1.定义subproblem DP[i][j]: 分割nums[0...i]为j个group .
+1.定义subproblem ```java DP[i][j]: 分割nums[0...i]为j个group ```.
