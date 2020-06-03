@@ -48,7 +48,7 @@ return DP[n][m]
 2.递归公式:由于这道题目和上一题不一样，上一题对每个区间求和即可，这一题是在每一个区间内产生一笔交易，值为该区间某一天的股票价减去另一天的股票价。``` DP[t][d] =  DP[k][j-1]+max_profit[]```  
 
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
 $$
 DP[t][d]=
