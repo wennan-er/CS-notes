@@ -50,6 +50,5 @@ return DP[n][m]
 
 ![DP\[t\]\[d\]= \begin{cases} DP\[t\]\[d-1\] \\  price\[d\] + max \left\{ DP\[t-1\]\[k\]-price\[k\]\right\}(0 \leq x \le d) \end{cases}](https://render.githubusercontent.com/render/math?math=DP%5Bt%5D%5Bd%5D%3D%20%5Cbegin%7Bcases%7D%20DP%5Bt%5D%5Bd-1%5D%20%5C%5C%20%20price%5Bd%5D%20%2B%20max%20%5Cleft%5C%7B%20DP%5Bt-1%5D%5Bk%5D-price%5Bk%5D%5Cright%5C%7D(0%20%5Cleq%20x%20%5Cle%20d)%20%5Cend%7Bcases%7D)
 
-
-DP[t][d]= \begin{cases} DP[t][d-1] \\ 
-price[d] + max \left\{ DP[t-1][k]-price[k]\right\}(0 \leq x \le d) \end{cases}
+[//]: <> DP[t][d]= \begin{cases} DP[t][d-1] \\ 
+[//]: <>  price[d] + max \left\{ DP[t-1][k]-price[k]\right\}(0 \leq x \le d) \end{cases}
