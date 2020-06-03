@@ -45,7 +45,7 @@ return DP[n][m]
      随后，在第 5 天 (股票价格 = 0) 的时候买入，在第 6 天 (股票价格 = 3) 的时候卖出, 这笔交易所能获得利润 = 3-0 = 3 。
 ```
 1.定义subproblem ``` DP[t][d]: 在k个transanction之下t天的收益 ```.  
-2.递归公式:由于这道题目和上一题不一样，上一题对每个区间求和即可，这一题是在每一个区间内产生一笔交易，值为该区间某一天的股票价减去另一天的股票价。``` DP[t][d] =  DP[k][j-1]+max_profit[]```
+2.递归公式:由于这道题目和上一题不一样，上一题对每个区间求和即可，这一题是在每一个区间内产生一笔交易，值为该区间某一天的股票价减去另一天的股票价。``` DP[t][d] =  DP[k][j-1]+max_profit[]```  
 
 ```math
 DP[t][d]=
@@ -53,5 +53,14 @@ DP[t][d]=
 DP[t][d-1] \\
 price[d] + max{DP[t-1][k]-price[k]}(x<=x<d)
 \end{cases}
-
 ```
+
+$$
+\begin{equation}
+D(x) = \begin{cases}
+1, & \text{if } x \in \mathbb{Q}; \\
+0, & \text{if } x \in
+     \mathbb{R}\setminus\mathbb{Q}.
+\end{cases}
+\end{equation}
+$$
