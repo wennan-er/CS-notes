@@ -48,17 +48,4 @@ return DP[n][m]
 2.递归公式:由于这道题目和上一题不一样，上一题对每个区间求和即可，这一题是在每一个区间内产生一笔交易，值为该区间某一天的股票价减去另一天的股票价。``` DP[t][d] =  DP[k][j-1]+max_profit[]```  
 
 
-![\Large DP[t][d]=
-\begin{cases}
-DP[t][d-1] \\
-price[d] + max{DP[t-1][k]-price[k]}(x<=x<d)
-\end{cases}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
-
-$$
-DP[t][d]=
-\begin{cases}
-DP[t][d-1] \\
-price[d] + max{DP[t-1][k]-price[k]}(x<=x<d)
-\end{cases}
-$$
-
+![DP\[t\]\[d\]= \begin{cases} DP\[t\]\[d-1\] \\ price\[d\] + max{DP\[t-1\]\[k\]-price\[k\]}(x<=x<d) \end{cases}](https://render.githubusercontent.com/render/math?math=DP%5Bt%5D%5Bd%5D%3D%20%5Cbegin%7Bcases%7D%20DP%5Bt%5D%5Bd-1%5D%20%5C%5C%20price%5Bd%5D%20%2B%20max%7BDP%5Bt-1%5D%5Bk%5D-price%5Bk%5D%7D(x%3C%3Dx%3Cd)%20%5Cend%7Bcases%7D)
