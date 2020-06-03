@@ -52,4 +52,4 @@ return DP[n][m]
 
 
 DP[t][d]= \begin{cases} DP[t][d-1] \\ 
-price[d] + max{DP[t-1][k]-price[k]}(0 \leq x \le d) \end{cases}
+price[d] + max \left\{ DP[t-1][k]-price[k]\right\}(0 \leq x \le d) \end{cases}
