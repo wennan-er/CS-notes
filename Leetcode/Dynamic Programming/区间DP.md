@@ -48,7 +48,7 @@ return DP[n][m]
 2.递归公式:由于这道题目和上一题不一样，上一题对每个区间求和即可，这一题是在每一个区间内产生一笔交易，值为该区间某一天的股票价减去另一天的股票价。``` DP[t][d] =  DP[k][j-1]+max_profit[]```  
 
 
-<img src=”http://www.forkosh.com/mathtex.cgi? 
+<img src="http://www.forkosh.com/mathtex.cgi? 
 $$
 DP[t][d]=
 \begin{cases}
@@ -56,5 +56,6 @@ DP[t][d-1] \\
 price[d] + max{DP[t-1][k]-price[k]}(x<=x<d)
 \end{cases}
 $$
+"
 >
 
